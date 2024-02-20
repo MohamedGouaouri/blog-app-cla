@@ -12,3 +12,8 @@ In the second lesson, you are asked to:
 - Share auth state using react contexts
 - Add theme toggle.
 For theme toggle you can make use of this [library](https://toggles.dev/docs/react)
+
+## Lesson3
+In the third and last session, we are going to:
+- Add new blog post
+- search over new posts
