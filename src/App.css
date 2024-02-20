@@ -1,6 +1,19 @@
 :root {
-  --navbar-bg-color: rgb(61, 61, 61);
-  --navbar-text-color: rgb(128, 128, 128);
+  --navbar-bg-color: rgb(224, 87, 87);
+  --navbar-text-color: rgb(235, 235, 235);
+
+  --navbar-bg-color-dark: #333;
+  --navbar-text-color-dark: #fff;
+
+  --body-bg-light: #fff;
+  --body-text-light: #000;
+  --border-color-light: #ccc;
+  --box-shadow-light: rgba(0, 0, 0, 0.1);
+
+  --body-bg-dark: #333;
+  --body-text-dark: #fff;
+  --border-color-dark: #666;
+  --box-shadow-dark: rgba(255, 255, 255, 0.1);
 }
 
 @font-face {
@@ -25,7 +38,9 @@ code {
     monospace;
 }
 
-.App {
+#root {
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +68,7 @@ code {
   margin: 10px;
   padding: 10px;
   text-decoration: none;
-  color: var(--navbar-text-color);
+  color: inherit
 }
 .navbar .links .create-new {
   background-color: rgb(224, 87, 87);
@@ -69,6 +84,8 @@ code {
 
 .content {
   padding: 20px;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .blog-preview {
@@ -120,9 +137,16 @@ input {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: border-color 0.3s ease-in-out;
+  color: inherit;
 }
 
 input:focus {
   outline: none;
   border: 1px solid #818181;
+}
+
+
+.dark {
+  color: var(--navbar-text-color-dark);
+  background-color: var(--navbar-bg-color-dark);
 }

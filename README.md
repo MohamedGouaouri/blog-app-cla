@@ -1,8 +1,14 @@
-# React + Vite
+## Lesson 1
+You're asked to do the following
+- Application layouting
+- Main component development
+- Routing
+- Data fetching
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Lesson2
+In the second lesson, you are asked to:
+- Add a login page
+- Add protected routes
+- Share auth state using react contexts
+- Add theme toggle.
+For theme toggle you can make use of this [library](https://toggles.dev/docs/react)
