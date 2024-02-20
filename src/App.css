@@ -1,0 +1,128 @@
+:root {
+  --navbar-bg-color: rgb(61, 61, 61);
+  --navbar-text-color: rgb(128, 128, 128);
+}
+
+@font-face {
+  font-family: "CMS";
+  src: url("fonts/cmu.serif-roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CMS Itlic";
+  src: url("fonts/cmu.serif-italic.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "CMS", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Start navbar styling */
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: var(--navbar-text-color);
+  background-color: var(--navbar-bg-color);
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.navbar h3 {
+  font-weight: bold;
+}
+.navbar .links {
+  margin-left: auto;
+  cursor: pointer;
+}
+.navbar .links a {
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--navbar-text-color);
+}
+.navbar .links .create-new {
+  background-color: rgb(224, 87, 87);
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+}
+.navbar .links .create-new:hover {
+  cursor: pointer;
+}
+
+/* End navbar styling */
+
+.content {
+  padding: 20px;
+}
+
+.blog-preview {
+  margin: 10px;
+  display: flex;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.blog-preview a {
+  margin-left: auto;
+  padding: 40px 10px;
+  text-decoration: none;
+  color: rgb(224, 87, 87);
+}
+
+.blog-preview:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+  margin: 20px 20px;
+  /* background-color: rgb(224, 87, 87); */
+  height: 25px;
+  width: 50px;
+  color: rgb(224, 87, 87);
+  border: 1px solid rgb(104, 80, 80);
+  border-radius: 40px;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+.blog-details {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  height: 30px;
+  width: 25%;
+  font-family: "CMS", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #818181;
+}
