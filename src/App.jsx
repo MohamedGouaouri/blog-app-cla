@@ -12,30 +12,9 @@ import AuthContext from './contexts/auth';
 
 
 function App() {
-  const navigate = useNavigate()
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
-  console.log(isLoggedIn)
-  const login = () => {
-    setIsLoggedIn(true)
-    navigate('/')
-  }
-
-  const logout = () => {
-    setIsLoggedIn(false)
-  }
-  useEffect(() => {
-    console.log('Updated')
-  })
   return (
       <div>
-        <AuthContext.Provider value={isLoggedIn}>
-          <Routes>
-            <Route element={<ProtectedRoute />}>
-              <Route path='*' element={<Home />}/>
-            </Route>
-            <Route path='/login' element={<Login login={login}/>}/>
-          </Routes>
-        </AuthContext.Provider>
+       <Route path='*' element={<Home />}/>
       </div>
   );
 }
