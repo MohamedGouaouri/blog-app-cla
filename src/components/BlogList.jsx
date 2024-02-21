@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import Blog from "./Blog"
 import useFetch from '../hooks/useFetch'
 
-function BlogList(){
+function BlogList({blogs}){
     
-    const [blogs] = useFetch('http://127.0.0.1:3000/blogs')
     return (
         <div>
             {

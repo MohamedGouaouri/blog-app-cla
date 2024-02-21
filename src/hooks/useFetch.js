@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 
 const useFetch = (url) => {
+  console.log('Fetching data')
     var [data, setData] = useState(null);
     // var abortController = new AbortController();
     useEffect(() => {
@@ -23,7 +24,7 @@ const useFetch = (url) => {
           // abortController.abort();
         }
       }, [url]); // eslint-disable-line
-    return [data];
+    return [data, setData];
 }
 
 export default useFetch;
